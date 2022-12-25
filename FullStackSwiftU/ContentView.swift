@@ -5,22 +5,57 @@
 //  Created by Thomas Nyuma on 12/25/22.
 //
 
+//            Image(systemName: "globe")
+//                .imageScale(.large)
+//                .foregroundColor(.accentColor)
+//            Text("Hello, world!")
+
 import SwiftUI
 
-struct ContentView: View {
+
+struct Row: View {
+    let movie: Movie
+    
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        
+
+        HStack(spacing: 24.0) {
+            AsyncImage(url: URL(string: movie.poster_path)!) { image in
+                image
+                    .resizable()
+                    .frame(width: 110.0, height: 170.0)
+                    .shadow(color: .gray, radius: 10.0, x: 4.0, y: 4.0)
+            } placeholder: {
+                Image(systemName: "photo.fill")
+            }
+
+            VStack(alignment: .leading, spacing: 4.0) {
+                HStack {
+                    Text(movie.title)
+                        .font(.headline)
+                    Spacer()
+                    if movie.is_favorite {
+                        Heart(isFilled: true)
+                    }
+                }
+                Text(movie.overview.components(separatedBy: " ").dropLast(movie.overview.split(whereSeparator: { ",.! ".contains($0) }).count - 20).joined(separator: " ") + "...")
+                Group {
+                    Text("Adventure, Action, Thriller")
+                    Text(movie.release_date)
+                }
+                .font(.caption)
+                .foregroundColor(.secondary)
+            }
+            Spacer()
         }
-        .padding()
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct Row_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Row(movie: TestData.movies[0])
+            .previewLayout(.sizeThatFits)
+            .padding()
     }
 }

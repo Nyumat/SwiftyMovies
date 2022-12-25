@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct FullStackSwiftUApp: App {
+  
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Row(movie: TestData.movies[0])
         }
     }
 }
