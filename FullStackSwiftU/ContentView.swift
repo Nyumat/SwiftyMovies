@@ -19,7 +19,6 @@ struct Row: View {
 
     var body: some View {
         
-
         HStack(spacing: 24.0) {
             AsyncImage(url: URL(string: movie.poster_path)!) { image in
                 image
@@ -29,7 +28,7 @@ struct Row: View {
             } placeholder: {
                 Image(systemName: "photo.fill")
             }
-
+        
             VStack(alignment: .leading, spacing: 4.0) {
                 HStack {
                     Text(movie.title)
