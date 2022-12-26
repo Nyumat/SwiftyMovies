@@ -1,5 +1,5 @@
 //
-//  MoviesView.swift
+//  MovieListView.swift
 //  SwiftyMovie
 //
 //  Created by Thomas Nyuma on 12/25/22.
@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct MoviesView: View {
+struct MovieListView: View {
     @State var movies: [Movie] = TestData.movies
         
         var body: some View {
@@ -27,8 +27,8 @@ struct MoviesView: View {
         }
 }
 
-struct MoviesView_Previews: PreviewProvider {
+struct MovieListView_Previews: PreviewProvider {
     static var previews: some View {
-        MoviesView()
+        MovieListView()
     }
 }
