@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 struct Heart: View {
-    let isFilled: Bool;
+    var isFilled: Bool;
     
     var body: some View {
         Image(systemName: isFilled ? "heart.fill" : "heart")

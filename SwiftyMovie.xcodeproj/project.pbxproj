@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		186160602959A8C60071B1B8 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1861605F2959A8C60071B1B8 /* MainView.swift */; };
+		186160632959A9370071B1B8 /* MoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186160622959A9370071B1B8 /* MoviesView.swift */; };
+		186160642959A9370071B1B8 /* MoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186160622959A9370071B1B8 /* MoviesView.swift */; };
 		18D6CD6929587D2100504BF7 /* SwiftyMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6CD6829587D2100504BF7 /* SwiftyMovie.swift */; };
 		18D6CD6B29587D2100504BF7 /* SingleMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6CD6A29587D2100504BF7 /* SingleMovieView.swift */; };
 		18D6CD6D29587D2500504BF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D6CD6C29587D2500504BF7 /* Assets.xcassets */; };
@@ -16,10 +19,12 @@
 		18D6CD7F29588C6400504BF7 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6CD7E29588C6400504BF7 /* TestData.swift */; };
 		18D6CD812958903500504BF7 /* MovieListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6CD802958903500504BF7 /* MovieListView.swift */; };
 		18D6CD8329589E5E00504BF7 /* HeartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6CD8229589E5D00504BF7 /* HeartView.swift */; };
-		18D6CD852958D1D200504BF7 /* MovieInfoBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6CD842958D1D200504BF7 /* MovieInfoBody.swift */; };
+		18D6CD852958D1D200504BF7 /* MainDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6CD842958D1D200504BF7 /* MainDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1861605F2959A8C60071B1B8 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		186160622959A9370071B1B8 /* MoviesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesView.swift; sourceTree = "<group>"; };
 		18CA4A212959376400105CA9 /* SwiftyMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D6CD6529587D2000504BF7 /* SwiftyMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D6CD6829587D2100504BF7 /* SwiftyMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyMovie.swift; sourceTree = "<group>"; };
@@ -31,7 +36,7 @@
 		18D6CD7E29588C6400504BF7 /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 		18D6CD802958903500504BF7 /* MovieListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListView.swift; sourceTree = "<group>"; };
 		18D6CD8229589E5D00504BF7 /* HeartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartView.swift; sourceTree = "<group>"; };
-		18D6CD842958D1D200504BF7 /* MovieInfoBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInfoBody.swift; sourceTree = "<group>"; };
+		18D6CD842958D1D200504BF7 /* MainDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +86,9 @@
 				18D6CD7E29588C6400504BF7 /* TestData.swift */,
 				18D6CD802958903500504BF7 /* MovieListView.swift */,
 				18D6CD8229589E5D00504BF7 /* HeartView.swift */,
-				18D6CD842958D1D200504BF7 /* MovieInfoBody.swift */,
+				18D6CD842958D1D200504BF7 /* MainDetailView.swift */,
+				1861605F2959A8C60071B1B8 /* MainView.swift */,
+				186160622959A9370071B1B8 /* MoviesView.swift */,
 			);
 			path = SwiftyMovie;
 			sourceTree = "<group>";
@@ -143,6 +150,7 @@
 				TargetAttributes = {
 					18CA4A202959376300105CA9 = {
 						CreatedOnToolsVersion = 14.0.1;
+						LastSwiftMigration = 1400;
 					};
 					18D6CD6429587D2000504BF7 = {
 						CreatedOnToolsVersion = 14.0.1;
@@ -193,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				186160642959A9370071B1B8 /* MoviesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,11 +210,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				18D6CD812958903500504BF7 /* MovieListView.swift in Sources */,
+				186160602959A8C60071B1B8 /* MainView.swift in Sources */,
 				18D6CD8329589E5E00504BF7 /* HeartView.swift in Sources */,
 				18D6CD6B29587D2100504BF7 /* SingleMovieView.swift in Sources */,
-				18D6CD852958D1D200504BF7 /* MovieInfoBody.swift in Sources */,
+				18D6CD852958D1D200504BF7 /* MainDetailView.swift in Sources */,
 				18D6CD6929587D2100504BF7 /* SwiftyMovie.swift in Sources */,
 				18D6CD772958890200504BF7 /* MovieModel.swift in Sources */,
+				186160632959A9370071B1B8 /* MoviesView.swift in Sources */,
 				18D6CD7F29588C6400504BF7 /* TestData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,6 +229,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftyMovie/Preview Content\"";
@@ -237,6 +249,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Nyumat.SwiftyMovie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -247,6 +260,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftyMovie/Preview Content\"";
