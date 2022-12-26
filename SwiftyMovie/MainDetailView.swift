@@ -1,5 +1,5 @@
 //
-//  MovieInfoBody.swift
+//  DetailView.swift
 //  SwiftyMovie
 //
 //  Created by Thomas Nyuma on 12/25/22.
@@ -13,7 +13,7 @@
 import Foundation
 import SwiftUI
 
-struct MovieInfoBody: View {
+struct BottomsDetailView: View {
     let movie: Movie
     
     var body: some View {
@@ -48,7 +48,7 @@ struct MovieInfoBody: View {
     }
 }
 
-struct SideInfo: View {
+struct SideDetailView: View {
     @Binding var movie: Movie
     
     var body: some View {
@@ -62,7 +62,6 @@ struct SideInfo: View {
                 VStack (alignment: .leading, spacing: 8.0) {
                     Text("Release Year")
                         .font(.system(size:18))
-                        .padding(.bottom, 1)
                         .foregroundColor(.secondary)
                         .bold()
                     Text("2022" + " , " + "USA")
@@ -90,11 +89,9 @@ struct SideInfo: View {
                 .foregroundColor(.secondary)
                 .padding(.top, 6)
                 Spacer()
-                Button(action: {
-                    movie.is_favorite.toggle()
-                })
+                Button(action:{self.movie.is_favorite.toggle()})
                        {
-                    Heart(isFilled: movie.is_favorite)
+                           Heart(isFilled:  movie.is_favorite)
                         .font(.title)
                 }
             }
@@ -102,7 +99,7 @@ struct SideInfo: View {
     }
 }
 
-struct DetailsView: View {
+struct MainDetailView: View {
     @Binding var movie: Movie
     
     var body: some View {
@@ -116,9 +113,9 @@ struct DetailsView: View {
                 } placeholder: {
                     Image(systemName: "photo.fill")
                 }
-                SideInfo(movie: $movie)
+                SideDetailView(movie: $movie)
             }
-            MovieInfoBody(movie: movie)
+            BottomsDetailView(movie: movie)
             Spacer()
         }
         .padding(.top, 18)
@@ -127,19 +124,16 @@ struct DetailsView: View {
     }
 }
 
-struct MovieInfoBody_Previews: PreviewProvider {
+struct MainDetailView_Previews: PreviewProvider {
     static let movie = TestData.movies[0]
     
     static var previews: some View {
         Group {
-            DetailsView(movie: .constant(movie))
-            Group {
-                SideInfo(movie: .constant(movie))
-                MovieInfoBody(movie: movie)
-            }
+            MainDetailView(movie: .constant(movie))
+        }
             .padding()
             .previewLayout(.sizeThatFits)
         }
     }
-}
+
 
