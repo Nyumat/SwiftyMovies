@@ -1,5 +1,5 @@
 //
-//  Movie.swift
+//  MovieModel.swift
 //  SwiftyMovie
 //
 //  Created by Thomas Nyuma on 12/25/22.
