@@ -1,6 +1,6 @@
 //
 //  MovieInfoBody.swift
-//  FullStackSwiftU
+//  SwiftyMovie
 //
 //  Created by Thomas Nyuma on 12/25/22.
 //

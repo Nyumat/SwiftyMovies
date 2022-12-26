@@ -1,6 +1,6 @@
 //
 //  MoviesView.swift
-//  FullStackSwiftU
+//  SwiftyMovie
 //
 //  Created by Thomas Nyuma on 12/25/22.
 //
@@ -15,7 +15,7 @@ struct MoviesView: View {
             List {
                 EditButton()
                 ForEach (movies, id: \.title) { movie in
-                    Row(movie: movie)
+                    SingleMovieView(movie: movie)
                 }
                 .onMove { (source, destination) in
                     self.movies.move(fromOffsets: source, toOffset: destination)

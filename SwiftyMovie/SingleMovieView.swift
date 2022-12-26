@@ -1,6 +1,6 @@
 //
-//  ContentView.swift
-//  FullStackSwiftU
+//  SingleMovieView.swift
+//  SwiftyMovie
 //
 //  Created by Thomas Nyuma on 12/25/22.
 //
@@ -13,7 +13,7 @@
 import SwiftUI
 
 
-struct Row: View {
+struct SingleMovieView: View {
     let movie: Movie
     
 
@@ -51,9 +51,9 @@ struct Row: View {
     }
 }
 
-struct Row_Previews: PreviewProvider {
+struct SingleMovieView_Previews: PreviewProvider {
     static var previews: some View {
-        Row(movie: TestData.movies[0])
+        SingleMovieView(movie: TestData.movies[0])
             .previewLayout(.sizeThatFits)
             .padding()
     }

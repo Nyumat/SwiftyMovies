@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18D6CD6929587D2100504BF7 /* FullStackSwiftUApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6CD6829587D2100504BF7 /* FullStackSwiftUApp.swift */; };
-		18D6CD6B29587D2100504BF7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6CD6A29587D2100504BF7 /* ContentView.swift */; };
+		18D6CD6929587D2100504BF7 /* SwiftyMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6CD6829587D2100504BF7 /* SwiftyMovie.swift */; };
+		18D6CD6B29587D2100504BF7 /* SingleMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6CD6A29587D2100504BF7 /* SingleMovieView.swift */; };
 		18D6CD6D29587D2500504BF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D6CD6C29587D2500504BF7 /* Assets.xcassets */; };
 		18D6CD7029587D2500504BF7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D6CD6F29587D2500504BF7 /* Preview Assets.xcassets */; };
 		18D6CD772958890200504BF7 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D6CD762958890200504BF7 /* Movie.swift */; };
@@ -20,9 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		18D6CD6529587D2000504BF7 /* FullStackSwiftU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FullStackSwiftU.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		18D6CD6829587D2100504BF7 /* FullStackSwiftUApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullStackSwiftUApp.swift; sourceTree = "<group>"; };
-		18D6CD6A29587D2100504BF7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		18CA4A212959376400105CA9 /* SwiftyMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18D6CD6529587D2000504BF7 /* SwiftyMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18D6CD6829587D2100504BF7 /* SwiftyMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyMovie.swift; sourceTree = "<group>"; };
+		18D6CD6A29587D2100504BF7 /* SingleMovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleMovieView.swift; sourceTree = "<group>"; };
 		18D6CD6C29587D2500504BF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18D6CD6F29587D2500504BF7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		18D6CD762958890200504BF7 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
@@ -34,6 +35,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		18CA4A1E2959376300105CA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		18D6CD6229587D2000504BF7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -47,7 +55,7 @@
 		18D6CD5C29587D2000504BF7 = {
 			isa = PBXGroup;
 			children = (
-				18D6CD6729587D2100504BF7 /* FullStackSwiftU */,
+				18D6CD6729587D2100504BF7 /* SwiftyMovie */,
 				18D6CD6629587D2000504BF7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,16 +63,17 @@
 		18D6CD6629587D2000504BF7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				18D6CD6529587D2000504BF7 /* FullStackSwiftU.app */,
+				18D6CD6529587D2000504BF7 /* SwiftyMovie.app */,
+				18CA4A212959376400105CA9 /* SwiftyMovie.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		18D6CD6729587D2100504BF7 /* FullStackSwiftU */ = {
+		18D6CD6729587D2100504BF7 /* SwiftyMovie */ = {
 			isa = PBXGroup;
 			children = (
-				18D6CD6829587D2100504BF7 /* FullStackSwiftUApp.swift */,
-				18D6CD6A29587D2100504BF7 /* ContentView.swift */,
+				18D6CD6829587D2100504BF7 /* SwiftyMovie.swift */,
+				18D6CD6A29587D2100504BF7 /* SingleMovieView.swift */,
 				18D6CD6C29587D2500504BF7 /* Assets.xcassets */,
 				18D6CD6E29587D2500504BF7 /* Preview Content */,
 				18D6CD762958890200504BF7 /* Movie.swift */,
@@ -74,7 +83,7 @@
 				18D6CD8229589E5D00504BF7 /* HeartView.swift */,
 				18D6CD842958D1D200504BF7 /* MovieInfoBody.swift */,
 			);
-			path = FullStackSwiftU;
+			path = SwiftyMovie;
 			sourceTree = "<group>";
 		};
 		18D6CD6E29587D2500504BF7 /* Preview Content */ = {
@@ -88,9 +97,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		18D6CD6429587D2000504BF7 /* FullStackSwiftU */ = {
+		18CA4A202959376300105CA9 /* SwiftyMovie */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 18D6CD7329587D2500504BF7 /* Build configuration list for PBXNativeTarget "FullStackSwiftU" */;
+			buildConfigurationList = 18CA4A2C2959376600105CA9 /* Build configuration list for PBXNativeTarget "SwiftyMovie" */;
+			buildPhases = (
+				18CA4A1D2959376300105CA9 /* Sources */,
+				18CA4A1E2959376300105CA9 /* Frameworks */,
+				18CA4A1F2959376300105CA9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyMovie;
+			productName = SwiftyMovie;
+			productReference = 18CA4A212959376400105CA9 /* SwiftyMovie.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18D6CD6429587D2000504BF7 /* SwiftyMovie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18D6CD7329587D2500504BF7 /* Build configuration list for PBXNativeTarget "SwiftyMovie" */;
 			buildPhases = (
 				18D6CD6129587D2000504BF7 /* Sources */,
 				18D6CD6229587D2000504BF7 /* Frameworks */,
@@ -100,9 +126,9 @@
 			);
 			dependencies = (
 			);
-			name = FullStackSwiftU;
-			productName = FullStackSwiftU;
-			productReference = 18D6CD6529587D2000504BF7 /* FullStackSwiftU.app */;
+			name = SwiftyMovie;
+			productName = SwiftyMovie;
+			productReference = 18D6CD6529587D2000504BF7 /* SwiftyMovie.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -115,12 +141,15 @@
 				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
+					18CA4A202959376300105CA9 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
 					18D6CD6429587D2000504BF7 = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
 				};
 			};
-			buildConfigurationList = 18D6CD6029587D2000504BF7 /* Build configuration list for PBXProject "FullStackSwiftU" */;
+			buildConfigurationList = 18D6CD6029587D2000504BF7 /* Build configuration list for PBXProject "SwiftyMovie" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -133,12 +162,20 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				18D6CD6429587D2000504BF7 /* FullStackSwiftU */,
+				18D6CD6429587D2000504BF7 /* SwiftyMovie */,
+				18CA4A202959376300105CA9 /* SwiftyMovie */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		18CA4A1F2959376300105CA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		18D6CD6329587D2000504BF7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -152,15 +189,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		18CA4A1D2959376300105CA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		18D6CD6129587D2000504BF7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				18D6CD812958903500504BF7 /* MoviesView.swift in Sources */,
 				18D6CD8329589E5E00504BF7 /* HeartView.swift in Sources */,
-				18D6CD6B29587D2100504BF7 /* ContentView.swift in Sources */,
+				18D6CD6B29587D2100504BF7 /* SingleMovieView.swift in Sources */,
 				18D6CD852958D1D200504BF7 /* MovieInfoBody.swift in Sources */,
-				18D6CD6929587D2100504BF7 /* FullStackSwiftUApp.swift in Sources */,
+				18D6CD6929587D2100504BF7 /* SwiftyMovie.swift in Sources */,
 				18D6CD772958890200504BF7 /* Movie.swift in Sources */,
 				18D6CD7F29588C6400504BF7 /* TestData.swift in Sources */,
 			);
@@ -169,6 +213,64 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		18CA4A2D2959376600105CA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftyMovie/Preview Content\"";
+				DEVELOPMENT_TEAM = A77WGB4442;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Nyumat.SwiftyMovie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18CA4A2E2959376600105CA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftyMovie/Preview Content\"";
+				DEVELOPMENT_TEAM = A77WGB4442;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Nyumat.SwiftyMovie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		18D6CD7129587D2500504BF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -290,8 +392,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"FullStackSwiftU/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftyMovie/Preview Content\"";
 				DEVELOPMENT_TEAM = A77WGB4442;
+				DSTROOT = /tmp/SwiftyMovie.dst;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -304,7 +407,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Nyumat.FullStackSwiftU;
+				PRODUCT_BUNDLE_IDENTIFIER = Nyumat.SwiftyMovie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -319,8 +422,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"FullStackSwiftU/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftyMovie/Preview Content\"";
 				DEVELOPMENT_TEAM = A77WGB4442;
+				DSTROOT = /tmp/SwiftyMovie.dst;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -333,7 +437,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Nyumat.FullStackSwiftU;
+				PRODUCT_BUNDLE_IDENTIFIER = Nyumat.SwiftyMovie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -344,7 +448,16 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		18D6CD6029587D2000504BF7 /* Build configuration list for PBXProject "FullStackSwiftU" */ = {
+		18CA4A2C2959376600105CA9 /* Build configuration list for PBXNativeTarget "SwiftyMovie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18CA4A2D2959376600105CA9 /* Debug */,
+				18CA4A2E2959376600105CA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18D6CD6029587D2000504BF7 /* Build configuration list for PBXProject "SwiftyMovie" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				18D6CD7129587D2500504BF7 /* Debug */,
@@ -353,7 +466,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		18D6CD7329587D2500504BF7 /* Build configuration list for PBXNativeTarget "FullStackSwiftU" */ = {
+		18D6CD7329587D2500504BF7 /* Build configuration list for PBXNativeTarget "SwiftyMovie" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				18D6CD7429587D2500504BF7 /* Debug */,
