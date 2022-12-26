@@ -16,7 +16,7 @@ struct SingleMovieView: View {
                 image
                     .resizable()
                     .frame(width: 110.0, height: 170.0)
-                    .shadow(color: .gray, radius: 10.0, x: 4.0, y: 4.0)
+                    .shadow(color: Color.blue, radius: 10.0, x: 1.0, y: 1.0)
             } placeholder: {
                 Image(systemName: "photo.fill")
             }
@@ -33,12 +33,7 @@ struct SingleMovieView: View {
                 Text(movie.overview.components(separatedBy: " ").dropLast(
                     movie.overview.split(whereSeparator: { ",.! ".contains($0) }).count - 20
                 ).joined(separator: " ") + "...")
-                Group {
-                    Text("Adventure, Action, Thriller")
-                    Text(movie.release_date)
-                }
-                .font(.caption)
-                .foregroundColor(.secondary)
+                .font(.subheadline)
             }
             Spacer()
         }
