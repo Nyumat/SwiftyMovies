@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct FullStackSwiftUApp: App {
+struct SwiftyMovieApp: App {
   
 
     var body: some Scene {
