@@ -1,5 +1,5 @@
 //
-//  DetailView.swift
+//  MainDetailView.swift
 //  SwiftyMovie
 //
 //  Created by Thomas Nyuma on 12/25/22.
@@ -53,11 +53,7 @@ struct SideDetailView: View {
     
     var body: some View {
         VStack (alignment: .leading, spacing: 8.0) {
-            Text(movie.title)
-            .font(.system(size:20))
-            .padding(.bottom, 1)
-            .foregroundColor(.secondary)
-            .bold()
+
             HStack (alignment: .top) {
                 VStack (alignment: .leading, spacing: 8.0) {
                     Text("Release Year")
@@ -130,10 +126,14 @@ struct MainDetailView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             MainDetailView(movie: .constant(movie))
-        }
+            Group {
+                SideDetailView(movie: .constant(movie))
+                BottomsDetailView(movie:  movie)
+            }
             .padding()
             .previewLayout(.sizeThatFits)
         }
     }
+}
 
 

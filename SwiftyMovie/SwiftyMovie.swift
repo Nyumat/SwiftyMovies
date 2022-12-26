@@ -13,7 +13,9 @@ struct SwiftyMovie: App {
 
     var body: some Scene {
         WindowGroup {
-            SingleMovieView(movie: TestData.movies[0])
+            MainView(movies: TestData.movies)
+                .environment(\.colorScheme, .dark)
         }
     }
 }
+
