@@ -30,11 +30,11 @@ struct MoviesView: View {
                 self.deletionOffsets = offsets
             }
         }
-        .navigationBarTitle("All Movies")
+        .navigationBarTitle(showOnlyFavorites ?  "Favorite Movies" :"All Movies")
         .navigationBarItems(trailing: showOnlyFavorites ? nil : EditButton())
         .actionSheet(isPresented: $isShowingDeleteConfirmation) {
-            ActionSheet(title: Text("Are You Sure?"), buttons: [
-                .destructive(Text("Delete"), action: { self.movies.remove(atOffsets: self.deletionOffsets) }),
+            ActionSheet(title: Text("Are you sure you would like to delete this movie?"), buttons: [
+                .destructive(Text("Yes"), action: { self.movies.remove(atOffsets: self.deletionOffsets) }),
                 .cancel()
             ])
         }
