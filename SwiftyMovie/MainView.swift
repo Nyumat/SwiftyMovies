@@ -27,7 +27,7 @@ struct MainView: View {
                 }
                 .tabItem {
                     Image(systemName: "heart")
-                    .font(.system(size: 26))
+                        .font(.system(size: 26))
                     Text("Favorites")
                 }
             }
@@ -37,6 +37,6 @@ struct MainView: View {
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView()
+        MainView().environment(\.colorScheme, .dark)
     }
 }
