@@ -19,17 +19,17 @@ cd SwiftyMovies
 
 Now, open Xcode and click as shown below:
 
-![Xcode](img1.png)
+<img src="img1.png" alt="Xcode"  width="300" />
 
 Next, open the .xcodeproj folder in root dir:
 
-![finder](finder.png)
+<img src="finder.png" alt="Finder"  width="450" />
 
 Now you have the project locally!
 
 > I appreciate how SwiftUI takes a declarative approach to building user interfaces. Prototyping the UI becomes quick and easy. I will definitely be building more fully-fleshed apps here soon. 
 
-Here's the resultant application: (Demo) 
+Here's the resultant application in action! (Gif Demo) 
 
-![Demo](swiftymovie.gif)
+<img src="swiftymovie.gif" alt="Demo"  width="250" />
 
