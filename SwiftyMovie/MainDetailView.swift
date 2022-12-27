@@ -24,7 +24,7 @@ struct BottomsDetailView: View {
                             .padding(.bottom, 1)
                             .foregroundColor(.secondary)
                             .bold()
-                        Text("Christopher Nolan")
+                        Text("Francis Ford Coppola")
                             .font(.headline)
                     }
                     VStack(alignment: .leading) {
@@ -33,7 +33,7 @@ struct BottomsDetailView: View {
                             .padding(.bottom, 1)
                             .foregroundColor(.secondary)
                             .bold()
-                        Text("Jenna Ortega, Leonardo Dicaprio, Bella Thorne, Harry Styles, Ben Affleck")
+                        Text("Al Pacino, Marlon Brando, James Caan, Diane Keaton, Robert De Niro, Talia Shire")
                             .font(.headline)
                     }
             Divider()
@@ -60,7 +60,7 @@ struct SideDetailView: View {
                         .font(.system(size:18))
                         .foregroundColor(.secondary)
                         .bold()
-                    Text("2022" + " , " + "USA")
+                    Text("1972" + " , " + "USA")
                         .font(.system(size: 14))
 
                     Text("Genres:")
@@ -68,7 +68,7 @@ struct SideDetailView: View {
                         .padding(.bottom, 1)
                         .foregroundColor(.secondary)
                         .bold()
-                    Text("Action, Adventure, Comedy, Thriller")
+                    Text("Action, Crime, Thriller")
                         .font(.system(size: 15))
                         .padding(.trailing)
                     
@@ -77,7 +77,7 @@ struct SideDetailView: View {
                         .padding(.bottom, 1)
                         .foregroundColor(.secondary)
                         .bold()
-                    Text("1 hour 22 minutes")
+                    Text("2 hours 55 minutes")
                         .font(.system(size: 15))
                 
                 }
